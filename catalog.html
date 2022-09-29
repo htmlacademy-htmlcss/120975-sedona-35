@@ -24,17 +24,17 @@
 
       <ul class="menu-user">
         <li class="menu-user-item">
-          <a class="menu-user-link" href="#">
+          <a class="menu-user-button-search" href="">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="menu-user-item">
-          <a class="menu-user-link" href="#">
+          <a class="menu-user-button-favorites" href="">
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
         <li class="menu-user-item">
-          <a class="menu-user-link button" href="">Хочу сюда!</a>
+          <button class="menu-user-button-booking" type="button">Хочу сюда!</button>
         </li>
       </ul>
     </header>
@@ -215,47 +215,39 @@
         </ul>
       </section>
 
-      <section class="newsletter-inner">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
+      <section class="subscribe subscribe-inner">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="subscribe-email" class="visually-hidden">Введите Email</label>
+          <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="footer-social">
-        <h3 class="visually-hidden">Социальные сети</h3>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="https://vk.com/htmlacademy">
-              <img src="" alt="Вконтакте" class="footer-social-link-logo">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="https://t.me/htmlacademy">
-              <img src="" alt="Телеграм" class="footer-social-link-logo">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="" alt="Ютуб" class="footer-social-link-logo">
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-tel">
-        <a class="footer-tel-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </div>
-
-      <div class="footer-htmlacademy">
-        <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="htmlacademy-logo" src="#" alt="Логотоип html academy">
-        </a>
-      </div>
+    <footer class="page-footer" data-test="footer">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-contacts-htmlacademy-link" href="https://htmlacademy.ru/">
+        <img class="htmlacademy-logo" src="#" alt="html academy">
+      </a>
     </footer>
     </main>
   </body>
