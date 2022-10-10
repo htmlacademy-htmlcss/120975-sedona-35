@@ -23,9 +23,23 @@ body {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .wrapper {
   width: 1200px;
+  margin: 0 auto;
   background-color: #FFFFFF;
+}
+
+.container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .button {
@@ -39,6 +53,7 @@ body {
 }
 
 .section-title {
+  margin: 0 0 20px 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -69,29 +84,42 @@ body {
   color: #FFFFFF;
   background: #756157;
 }
-
 .hero {
-  padding: 51px 0 82px;
+  color: #000000;
   background:
-    url("../images/hero/divider.svg") no-repeat bottom,
-    url("../images/hero/mountains.jpg") no-repeat;
-  background-color: LightSeaGreen;
-  background-size: 100% auto;
+    url("../images/hero/divider.svg") bottom,
+    url("../images/hero/mountains.jpg");
+  background-color: #493e3e;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.hero-logo {
+
+}
+
+.preview {
+  padding: 69px 274px 90px 274px;
+}
+
+.preview-title {
+  margin-bottom: 25px;
   text-align: center;
 }
 
-.advantages {
-  text-align: center;
-}
-
-.advantages-title {
-
-}
-
-.advantages-description {
+.preview-description {
+  margin-top: 0;
+  margin-bottom: 0;
   color: #333333;
   font-size: 22px;
   line-height: 26px;
+}
+
+.advantages {
+
 }
 
 .advantages-list {
@@ -118,11 +146,17 @@ body {
 }
 
 .search {
-
+  padding: 96px 304px;
   text-align: center;
 }
 
+.search-title {
+
+}
+
 .search-text {
+  margin-top: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -138,22 +172,30 @@ body {
 }
 
 .subscribe {
+  padding: 96px 258px 104px;
   text-align: center;
 }
 
 .subscribe-main {
-  height: 500px;
   color: #FFFFFF;
   background-image: url("../images/subscribe/devil-bridge-blurry.jpg");
   background-color: LightSeaGreen;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: top;
+}
+
+.subscribe-title {
+
 }
 
 .subscribe-text {
   font-size: 22px;
   line-height: 26px;
+
+
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-field {
@@ -177,10 +219,14 @@ body {
   text-decoration: none;
 }
 
+.page-footer {
+  padding: 40px 0 30px;
+}
+
 
 /* Каталог */
 
-.inner-header {
+.catalog-filter {
   color: #FFFFFF;
   background: url("../images/catalog/mountains-blurry.jpg") no-repeat;
   background-color: LightSeaGreen;
