@@ -8,10 +8,10 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <div class="container">
+        <div class="container header-container">
           <nav class="navigation">
-            <a href="index.html" class="header-logo"><img src="images/header/logo-sedona.svg" width="140" height="70" alt="Логотип Седона"></a>
-            <ul class="navigation-list">
+            <a href="index.html" class="header-logo"><img src="images/header/logo-sedona.svg" class="header-logo-image" width="140" height="70" alt="Логотип Седона"></a>
+            <ul class="menu navigation-list">
               <li class="navigation-item">
                 <a class="navigation-link" href="index.html">Главная</a>
               </li>
@@ -24,29 +24,29 @@
             </ul>
           </nav>
 
-          <ul class="menu-user">
-            <li class="menu-user-item">
-              <a class="menu-user-button-search" href="">
-                <span class="visually-hidden">Поиск</span>
+          <ul class="menu menu-user">
+            <li class="menu-user-item menu-user-item-search">
+              <a class="menu-user-button menu-user-button-search" href="">
+                <img src="images/header/icon-search.svg" alt="Поиск" width="18" height="18" class="menu-user-button-image">
               </a>
             </li>
-            <li class="menu-user-item">
-              <a class="menu-user-button-favorites" href="">
-                <span class="visually-hidden">Избранное</span>
+            <li class="menu-user-item menu-user-item-favorites">
+              <a class="menu-user-button menu-user-button-favorites" href="">
+                <img src="images/header/icon-heart.svg" alt="Избранное" width="18" height="17" class="menu-user-button-image">
               </a>
             </li>
-            <li class="menu-user-item">
+            <li class="menu-user-item menu-user-item-booking">
               <button class="button menu-user-button-booking" type="button">Хочу сюда!</button>
             </li>
           </ul>
         </div>
       </header>
 
-      <main class="main-inner">
+      <main class="main-inner main-container">
         <section class="catalog-filter">
           <div class="container">
-            <h1 class="inner-header-title">Гостиницы Седоны</h1>
-            <a class="breadcrumbs-link" href="index.html">
+            <h1 class="main-inner-title">Гостиницы Седоны</h1>
+            <a class="catalog-breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -99,12 +99,16 @@
                 </ul>
               </fieldset>
 
-              <p class="catalog-filter-price">Стоимость, ₽:</p>
-              <input class="catalog-filter-price-input" value="0" placeholder="от" type="text">
-              <input class="catalog-filter-price-input" value="9000" placeholder="до" type="text">
+              <div class="catalog-filter-price">
+                <p class="catalog-filter-title">Стоимость, ₽:</p>
+                <input class="catalog-filter-price-input" value="0" placeholder="от" type="text">
+                <input class="catalog-filter-price-input" value="9000" placeholder="до" type="text">
+              </div>
 
-              <button class="button button-filter button-submit-filter" type="submit">Применить</button>
-              <button class="button button-filter button-reset-filter" type="reset">Сбросить</button>
+              <div class="catalog-filter-price">
+                <button class="button button-filter button-submit-filter" type="submit">Применить</button>
+                <button class="button button-filter button-reset-filter" type="reset">Сбросить</button>
+              </div>
             </form>
           </div>
         </section>
@@ -222,7 +226,7 @@
           </div>
         </section>
 
-        <section class="subscribe subscribe-inner">
+        <section class="subscribe subscribe-inner section-container">
           <h2 class="section-title subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -234,21 +238,21 @@
       </main>
 
       <footer class="page-footer" data-test="footer">
-        <div class="container">
+        <div class="container footer-container">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
+              <a class="footer-social-link footer-social-link-vk" href="https://vk.com/htmlacademy">
+                <img src="images/footer/logo-vk.svg" alt="Вконтакте" class="footer-social-link-logo">
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
+              <a class="footer-social-link footer-social-link-telegram" href="https://t.me/htmlacademy">
+                <img src="images/footer/logo-telegram.svg" alt="Телеграм" class="footer-social-link-logo">
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
+              <a class="footer-social-link footer-social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="images/footer/logo-youtube.svg" alt="Ютуб" class="footer-social-link-logo">
               </a>
             </li>
           </ul>
