@@ -631,8 +631,8 @@ body {
 
 .hotel-card-button-by {
   color: #FFFFFF;
-  background-color: #756157;
   text-decoration: none;
+  background-color: #756157;
   padding: 8px 26px;
 }
 
@@ -654,9 +654,10 @@ body {
 
 .hotel-card-rating-button {
   font-weight: 400;
-
   background-color: #F2F2F2;
+  display: block;
   padding: 9px 22px 8px;
+  margin-left: auto;
 }
 
 .pagination {
