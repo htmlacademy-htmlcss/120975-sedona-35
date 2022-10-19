@@ -572,7 +572,6 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -580,10 +579,16 @@ body {
   width: 340px;
   box-sizing: border-box;
   padding: 20px;
+  margin-right: 20px;
   color: #333333;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
+
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
+}
+
 
 .hotel-card:nth-child(n + 4) {
   margin-top: 20px;
