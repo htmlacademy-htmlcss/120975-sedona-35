@@ -122,12 +122,16 @@ body {
   margin-left: auto;
 }
 
+.menu-user-item {
+  display: flex;
+}
+
 .menu-user-item-search {
-  margin-right: 26px;
+
 }
 
 .menu-user-item-favorites {
-  margin-right: 33px;
+  margin-right: 20px;
 }
 
 .menu-user-item-booking {
@@ -135,7 +139,7 @@ body {
 }
 
 .menu-user-button {
-
+  padding: 23px 13px;
 }
 
 .menu-user-button-image {
@@ -150,11 +154,11 @@ body {
 
 .hero {
   color: #000000;
+  text-align: center;
   background:
     url("../images/hero/divider.svg") bottom,
     url("../images/hero/mountains.jpg");
   background-color: #493e3e;
-  text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 51px;
