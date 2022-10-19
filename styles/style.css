@@ -105,7 +105,7 @@ body {
 }
 
 .navigation-item {
-
+  display: flex ;
 }
 
 .navigation-link {
@@ -557,6 +557,10 @@ body {
   line-height: 21px;
 }
 
+.hotel-variants {
+  padding-bottom: 60px;
+}
+
 .hotel-list {
   margin: 0;
   padding: 0;
@@ -657,6 +661,7 @@ body {
 
 .pagination-item {
   margin-right: 8px;
+  display: flex;
 }
 
 .pagination-link {
