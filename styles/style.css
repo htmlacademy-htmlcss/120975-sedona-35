@@ -33,6 +33,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
 }
@@ -82,15 +83,18 @@ body {
 .header-logo {
   width: 140px;
   margin-right: 44px;
+  position: absolute;
 }
 
 .header-logo-image {
   vertical-align: bottom;
+
 }
 
 .navigation {
+  width: 507px;
   display: flex;
-
+  justify-content: space-between;
 }
 
 .menu {
@@ -103,7 +107,8 @@ body {
 }
 
 .navigation-list {
-  width: 462px;
+
+  margin-left: auto;
 }
 
 .navigation-item {
@@ -141,7 +146,7 @@ body {
 }
 
 .menu-user-button {
-  padding: 23px 13px;
+  padding: 21px 13px;
 }
 
 .menu-user-button-image {
@@ -151,15 +156,16 @@ body {
 .menu-user-button-booking {
   padding: 8px 34px;
   color: #FFFFFF;
-  background: #756157;
+  background-color: #756157;
 }
 
 .hero {
   color: #000000;
   text-align: center;
-  background:
-    url("../images/hero/divider.svg") bottom,
+  background-image:
+    url("../images/hero/divider.svg"),
     url("../images/hero/mountains.jpg");
+  background-position: bottom;
   background-color: #493e3e;
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,7 +178,7 @@ body {
 }
 
 .preview {
-  padding: 69px 274px 90px 274px;
+  padding: 69px 260px 90px;
 }
 
 .preview-title {
@@ -186,6 +192,7 @@ body {
   color: #333333;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .advantages {
@@ -222,14 +229,18 @@ body {
 .advantages-item-bg-image-hotel {
   padding-right: 885px;
   padding-left: 85px;
-  background: url("../images/advantages/hotel.jpg") no-repeat right;
+  background-image: url("../images/advantages/hotel.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
   background-color: #82B3D3;
 }
 
 .advantages-item-bg-image-bridge {
   padding-left: 885px;
   padding-right: 85px;
-  background: url("../images/advantages/devil-bridge.jpg") no-repeat left;
+  background-image: url("../images/advantages/devil-bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
   background-color: #82B3D3;
 }
 
@@ -250,11 +261,11 @@ body {
   padding-bottom: 30px;
 }
 
-.advantages-item-title-with-white-line {
+.advantages-item-title-white-line {
   background: url("../images/advantages/border-line-white.svg") no-repeat bottom;
 }
 
-.advantages-item-title-with-gray-line {
+.advantages-item-title-gray-line {
   background: url("../images/advantages/border-line-gray.svg") no-repeat bottom;
 }
 
@@ -331,7 +342,7 @@ body {
 .subscribe-main {
   color: #FFFFFF;
   background-image: url("../images/subscribe/devil-bridge-blurry.jpg");
-  background-color: LightSeaGreen;
+  background-color: #82B3D3;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -432,7 +443,7 @@ body {
   color: #FFFFFF;
   background: url("../images/catalog/mountains-blurry.jpg") no-repeat;
   background-size: cover;
-  background-color: LightSeaGreen;
+  background-color: #82B3D3;
   padding: 35px 0 70px;
 }
 
@@ -558,7 +569,7 @@ body {
 }
 
 .select-control {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
@@ -645,7 +656,7 @@ body {
 
 .hotel-card-button-favorites {
   color: #FFFFFF;
-  background: #82B3D3;
+  background-color: #82B3D3;
   padding: 8px 20px;
   margin-left: auto;
 }
@@ -679,17 +690,21 @@ body {
 
 .pagination-item {
   margin-right: 8px;
-  display: flex;
+  /*display: flex;*/
 }
 
 .pagination-link {
+  display: block;
+  width: 60px;
   background-color: #82B3D3;
   color: #FFFFFF;
+  text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  padding: 17px 24px;
+  padding: 12px 0 12px;
   border-radius: 4px;
 }
 
