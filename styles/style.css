@@ -446,16 +446,16 @@ body {
   font-size: 18px;
   line-height: 24px;
   width: 452px;
-  max-height: 52px;
-  padding: 14px 20px;
+  padding: 11px 20px;
   box-sizing: border-box;
-  border: none;
+  border: 3px solid #F2F2F2;
   border-radius: 4px 0 0 4px;
   background-color: #F2F2F2;
 }
 
 .subscribe-field:hover {
   background-color: #E6E6E6;
+  border: 3px solid #E6E6E6;
 }
 
 .subscribe-field:focus {
@@ -600,6 +600,10 @@ body {
   text-decoration: none;
 }
 
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
 .breadcrumbs-link-current {
   padding-left: 17px;
   background: url("../images/catalog/arrow-right.svg") no-repeat left;
@@ -607,6 +611,7 @@ body {
 
 .catalog-filter-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-column-1 {
@@ -660,11 +665,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-price {
-  display: flex;
-  flex-direction: column;
+  min-width: 291px;
 }
 
 .catalog-filter-price-input {
@@ -672,13 +677,42 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  background-color: #F2F2F2;
   color: #000000;
+  background-color: #F2F2F2;
+  width: 143px;
+  padding: 9px 20px;
+  box-sizing: border-box;
+  border: 3px solid #F2F2F2;
+}
+
+.catalog-filter-price-input:hover {
+  background-color: #E6E6E6;
+  border-color: #E6E6E6;
+}
+
+.catalog-filter-price-input:focus {
+  background-color: #E6E6E6;
+  outline: none;
+  border: 3px solid #83B3D3;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-price-input:nth-of-type(1) {
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-price-input:nth-of-type(2) {
+  border-radius: 0 4px 4px 0;
 }
 
 .catalog-filter-price-input::placeholder {
   text-align: right;
   line-height: 24px;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
 }
 
 .button-filter {
@@ -731,6 +765,7 @@ body {
 }
 
 .hotel-sort-text {
+  margin-right: 200px;
   margin-bottom: 0;
   font-weight: 700;
 }
@@ -739,6 +774,38 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  padding: 10px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-view {
+  min-height: 22px;
+  min-width: 16px;
+  padding: 13px 16px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-view:hover {
+  border-color: #000000;
+}
+
+.button-view:focus, .button-view:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.button-view:active {
+  border-color: #000000;
+}
+
+.button-view:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.button-view:nth-of-type(1) {
+  margin-left: auto;
 }
 
 .hotel-variants {
@@ -768,7 +835,6 @@ body {
 .hotel-card:nth-child(3n) {
   margin-right: 0;
 }
-
 
 .hotel-card:nth-child(n + 4) {
   margin-top: 20px;
@@ -826,6 +892,18 @@ body {
   padding: 8px 26px;
 }
 
+.hotel-card-button-by:hover {
+  background-color: #615048;
+}
+
+.hotel-card-button-by:focus {
+  background-color: #615048;
+}
+
+.hotel-card-button-by:active {
+  background-color: #756157;
+}
+
 .hotel-card-button-favorites {
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -833,9 +911,33 @@ body {
   margin-left: auto;
 }
 
+.hotel-card-button-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.hotel-card-button-favorites:focus {
+  background-color: #68A2CA;
+}
+
+.hotel-card-button-favorites:active {
+  background-color: #82B3D3;
+}
+
 .hotel-card-button-active {
   padding: 8px 18px;
-  background-color: #7DB54F;;
+  background-color: #7DB54F;
+}
+
+.hotel-card-button-active:hover {
+  background-color: #6C9E42;
+}
+
+.hotel-card-button-active:focus {
+  background-color: #6C9E42;
+}
+
+.hotel-card-button-active:active {
+  background-color: #7DB54F;
 }
 
 .hotel-card-rating {
@@ -843,9 +945,15 @@ body {
 }
 
 .hotel-card-rating-button {
+  display: inline-block;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   background-color: #F2F2F2;
-
+  border: none;
+  border-radius: 4px;
   margin-left: auto;
   padding: 9px 22px 8px;
 }
