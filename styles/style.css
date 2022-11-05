@@ -779,10 +779,27 @@ body {
   border-radius: 4px;
 }
 
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus, .select-control:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.select-control:active {
+  border-color: #3F5E72;
+}
+
+.sort-type {
+  margin-right: auto;
+}
+
 .button-view {
   min-height: 22px;
   min-width: 16px;
-  padding: 13px 16px;
+  padding: 11px 14px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -800,12 +817,12 @@ body {
   border-color: #000000;
 }
 
-.button-view:not(:last-of-type) {
-  margin-right: 8px;
+.button-view-current {
+  border-color: #000000;
 }
 
-.button-view:nth-of-type(1) {
-  margin-left: auto;
+.button-view:not(:last-of-type) {
+  margin-right: 8px;
 }
 
 .hotel-variants {
@@ -985,6 +1002,19 @@ body {
   line-height: 36px;
   padding: 12px 0;
   border-radius: 4px;
+}
+
+.pagination-link:hover:not(.pagination-link-current):not(.pagination-link-further) {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus:not(.pagination-link-current):not(.pagination-link-further) {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active:not(.pagination-link-current):not(.pagination-link-further) {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link-current {
