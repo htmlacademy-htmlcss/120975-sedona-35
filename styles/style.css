@@ -249,11 +249,10 @@ body {
 }
 
 .hero {
+  position: relative;
   color: #000000;
   text-align: center;
-  background-image:
-    url("../images/hero/divider.svg"),
-    url("../images/hero/mountains.jpg");
+  background-image: url("../images/hero/mountains.jpg");
   background-position: bottom;
   background-color: #493e3e;
   background-size: cover;
@@ -262,8 +261,18 @@ body {
   padding-bottom: 82px;
 }
 
-.hero-logo {
+.hero::before {
+  content: '';
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/hero/divider.svg");
+}
 
+.hero-logo {
+  vertical-align: bottom;
 }
 
 .preview {
