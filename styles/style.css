@@ -678,6 +678,7 @@ body {
   display: grid;
   grid-template-columns: 137px 110px 220px 110px;
   row-gap: 48px;
+  align-items: center;
 }
 
 .booking-label {
@@ -685,7 +686,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  align-self: center;
 }
 
 .booking-input {
@@ -709,6 +709,7 @@ body {
 }
 
 .booking-input:active {
+  background-color: #F2F2F2;
   outline: 2px solid #000000;
 }
 
@@ -758,7 +759,6 @@ body {
   height: 20px;
   top: 14px;
   padding: 0;
-  margin: 0;
   border: none;
   border-radius: 4px;
   background-color: transparent;
@@ -805,7 +805,7 @@ body {
 .info-child-container {
   grid-column: 3/4;
   display: flex;
-  justify-content: center;
+  margin-left: 88px;
 }
 
 .modal-search-button {
@@ -820,6 +820,67 @@ body {
   font-size: 20px;
   line-height: 24px;
   border-radius: 10px;
+}
+
+.modal-search-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-search-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.modal-search-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.tooltip {
+  margin-left: 10px;
+  position: relative;
+}
+
+.tooltip-toggle {
+  display: block;
+  width: 26px;
+  height: 26px;
+  padding-top: 4px;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 50%;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text {
+  position: absolute;
+  left: -120px;
+  top: 41px;
+  z-index: 3;
+  display: none;
+  box-sizing: border-box;
+  width: 256px;
+  padding: 22px;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.tooltip-text::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  right: 119px;
+  width: 19px;
+  height: 9px;
+  background-image: url("../images/modal/tooltip-arrow.svg");
 }
 
 
