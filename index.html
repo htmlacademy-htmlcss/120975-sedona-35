@@ -165,6 +165,36 @@
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
           </button>
+
+          <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="booking-label" for="in-date">Дата заезда:</label>
+            <input class="booking-input booking-input-date" type="text" id="in-date" name="appointment-date" placeholder="Укажите дату" value="27 апреля 2020">
+            <p class="modal-message erorr">Мы не можем отправить вас в прошлое.</p>
+
+            <label class="booking-label" for="out-date">Дата выезда:</label>
+            <input class="booking-input booking-input-date" type="text" id="out-date" name="appointment-date" placeholder="Укажите дату" value="1 сентября 2023">
+            <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
+
+            <label class="booking-label" for="adult">Взрослые:</label>
+
+            <div class="input-number-container">
+              <button class="minus"></button>
+              <input class="booking-input booking-input-number" type="number" id="adult" name="adult" value="2">
+              <button class="plus"></button>
+            </div>
+
+            <div class="info-child-container">
+              <label class="booking-label" for="child">Дети:</label>
+            </div>
+
+            <div class="input-number-container">
+              <button class="minus"></button>
+              <input class="booking-input booking-input-number" type="number" id="child" name="child" value="2">
+              <button class="plus"></button>
+            </div>
+
+            <a href="" class="modal-search-button">Найти</a>
+          </form>
         </section>
       </div>
     </div>
