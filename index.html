@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="wrapper">
@@ -65,40 +66,40 @@
 
         <section class="advantages" data-test="advantages">
           <ul class="advantages-list">
-            <li class="advantages-item advantages-item-bg-image advantages-item-bg-image-hotel">
-              <h3 class="advantages-item-title advantages-item-title-white-line">Настоящий городок</h3>
+            <li class="advantages-item advantages-item-image advantages-item-image-hotel">
+              <h3 class="advantages-item-title advantages-item-white-line">Настоящий городок</h3>
               <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
-            <li class="advantages-item advantages-item-bg advantages-item-bg-light">
-              <h3 class="advantages-item-title advantages-item-title-gray-line">Небольшая площадь</h3>
+            <li class="advantages-item advantages-item-bg advantages-item-light">
+              <h3 class="advantages-item-title advantages-item-gray-line">Небольшая площадь</h3>
               <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="advantages-item advantages-item-bg advantages-item-bg-dark">
-              <h3 class="advantages-item-title advantages-item-title-gray-line">Красивая<br> дорога</h3>
+            <li class="advantages-item advantages-item-bg advantages-item-dark">
+              <h3 class="advantages-item-title advantages-item-gray-line">Красивая<br> дорога</h3>
               <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="advantages-item advantages-item-bg advantages-item-bg-light">
-              <h3 class="advantages-item-title advantages-item-title-gray-line">Мало<br> туристов</h3>
+            <li class="advantages-item advantages-item-bg advantages-item-light">
+              <h3 class="advantages-item-title advantages-item-gray-line">Мало<br> туристов</h3>
               <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantages-item advantages-item-bg-image advantages-item-bg-image-bridge">
-              <h3 class="advantages-item-title advantages-item-title-white-line">Там есть мост дьявола</h3>
+            <li class="advantages-item advantages-item-image advantages-item-image-bridge">
+              <h3 class="advantages-item-title advantages-item-white-line">Там есть<br> мост дьявола</h3>
               <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
           </ul>
 
           <ul class="services-list advantages-list">
-            <li class="services-item advantages-item-bg advantages-item-bg-light">
-              <h3 class="services-item-title services-item-title-img-home advantages-item-title">Жильё</h3>
-              <p class="services-item-description advantages-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <li class="services-item advantages-item-bg advantages-item-light">
+              <h3 class="services-item-title services-item-img-home advantages-item-title">Жильё</h3>
+              <p class="advantages-item-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="services-item advantages-item-bg">
-              <h3 class="services-item-title services-item-title-img-food advantages-item-title">Еда</h3>
-              <p class="advantages-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <h3 class="services-item-title services-item-img-food advantages-item-title">Еда</h3>
+              <p class="advantages-item-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="services-item advantages-item-bg advantages-item-bg-light">
-              <h3 class="services-item-title services-item-title-img-gift advantages-item-title">Сувениры</h3>
-              <p class="services-item-description advantages-item-description">Не только китайского, но и настоящего местного производства!</p>
+            <li class="services-item advantages-item-bg advantages-item-light">
+              <h3 class="services-item-title services-item-img-gift advantages-item-title">Сувениры</h3>
+              <p class="advantages-item-description">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -156,6 +157,55 @@
           </a>
         </div>
       </footer>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal modal-booking">
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+
+          <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="booking-label" for="in-date">Дата заезда:</label>
+            <input class="booking-input booking-input-date" type="text" id="in-date" name="appointment-date" placeholder="Укажите дату" value="27 апреля 2020">
+            <p class="modal-message erorr">Мы не можем отправить вас в прошлое.</p>
+
+            <label class="booking-label" for="out-date">Дата выезда:</label>
+            <input class="booking-input booking-input-date" type="text" id="out-date" name="appointment-date" placeholder="Укажите дату" value="1 сентября 2023">
+            <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
+
+            <label class="booking-label" for="adult">Взрослые:</label>
+
+            <div class="input-number-container">
+              <button class="minus"></button>
+              <input class="booking-input booking-input-number" type="number" id="adult" name="adult" value="2">
+              <button class="plus"></button>
+            </div>
+
+            <div class="info-child-container">
+              <label class="booking-label" for="child">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle">
+                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" fill="#fff"/>
+                  </svg>
+                </button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </div>
+
+            <div class="input-number-container">
+              <button class="minus"></button>
+              <input class="booking-input booking-input-number" type="number" id="child" name="child" value="2">
+              <button class="plus"></button>
+            </div>
+
+            <a href="" class="modal-search-button">Найти</a>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
