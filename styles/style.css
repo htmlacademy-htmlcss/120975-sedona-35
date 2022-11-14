@@ -85,6 +85,10 @@ body {
   text-transform: uppercase;
 }
 
+
+/* Хедер */
+
+
 .page-header {
   color: #000000;
   z-index: 1;
@@ -186,11 +190,15 @@ body {
   display: block;
   width: 20px;
   height: 20px;
+}
+
+.menu-user-button-search {
   padding: 22px 12px;
 }
 
 .menu-user-button-favorites {
   position: relative;
+  padding: 21px 12px 23px;
 }
 
 .menu-user-button-favorites::after {
@@ -200,7 +208,7 @@ body {
   color: #FFFFFF;
   position: absolute;
   left: 20px;
-  top: 13px;
+  top: 12px;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
@@ -225,14 +233,6 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.menu-user-button-search {
-
-}
-
-.menu-user-button-favorites {
-
-}
-
 .menu-user-button-booking {
   padding: 8px 34px;
   color: #FFFFFF;
@@ -250,6 +250,10 @@ body {
 .menu-user-button-booking:active {
   background-color: #756157;
 }
+
+
+/* Хиро блок */
+
 
 .hero {
   position: relative;
@@ -278,6 +282,10 @@ body {
   vertical-align: bottom;
 }
 
+
+/* Превью */
+
+
 .preview {
   padding: 69px 260px 90px;
 }
@@ -296,6 +304,10 @@ body {
   text-align: center;
 }
 
+
+/* Преимущества*/
+
+
 .advantages {
 
 }
@@ -311,7 +323,6 @@ body {
 
 .advantages-item {
 
-
 }
 
 .advantages-item-bg {
@@ -320,14 +331,14 @@ body {
   padding: 103px 85px 121px;
 }
 
-.advantages-item-bg-image {
+.advantages-item-image {
   color: #FFFFFF;
   width: 100%;
   padding-top: 92px;
   padding-bottom: 111px;
 }
 
-.advantages-item-bg-image-hotel {
+.advantages-item-image-hotel {
   padding-right: 885px;
   padding-left: 85px;
   background-image: url("../images/advantages/hotel.jpg");
@@ -336,7 +347,7 @@ body {
   background-color: #82B3D3;
 }
 
-.advantages-item-bg-image-bridge {
+.advantages-item-image-bridge {
   padding-left: 885px;
   padding-right: 85px;
   background-image: url("../images/advantages/devil-bridge.jpg");
@@ -345,11 +356,11 @@ body {
   background-color: #82B3D3;
 }
 
-.advantages-item-bg-light {
+.advantages-item-light {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-bg-dark {
+.advantages-item-dark {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -359,14 +370,14 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
-.advantages-item-title-white-line {
+.advantages-item-white-line {
   background: url("../images/advantages/border-line-white.svg") no-repeat bottom;
 }
 
-.advantages-item-title-gray-line {
+.advantages-item-gray-line {
   background: url("../images/advantages/border-line-gray.svg") no-repeat bottom;
 }
 
@@ -391,27 +402,34 @@ body {
   background-position: top;
 }
 
-.services-item-title-img-home {
+.services-item-img-home {
   background-image: url("../images/advantages/icon-home.svg");
 }
 
-.services-item-title-img-food {
+.services-item-img-food {
   background-image: url("../images/advantages/icon-food.svg");
 }
 
-.services-item-title-img-gift {
+.services-item-img-gift {
   background-image: url("../images/advantages/icon-gift.svg");
 }
 
+
+/* Контейнер для некоторых секций */
+
+
 .section-container {
-  padding: 96px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.search {
 
+/* Блок поиска */
+
+
+.search {
+  padding: 96px 258px;
 }
 
 .search-title {
@@ -448,8 +466,12 @@ body {
   background-color: #756157;
 }
 
-.subscribe {
 
+/* Блок подписки */
+
+
+.subscribe {
+  padding: 96px 258px 104px;
 }
 
 .subscribe-main {
@@ -529,9 +551,12 @@ body {
   background-color: #82B3D3;
 }
 
+
+/* Футер */
+
+
 .page-footer {
   padding: 45px 0 35px;
-
 }
 
 .footer-container {
@@ -607,6 +632,10 @@ body {
 .footer-contacts-htmlacademy-link:active .footer-contacts-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
+
+
+/* Модальное окно */
+
 
 .modal-container {
   position: fixed;
@@ -767,7 +796,7 @@ body {
 }
 
 .minus {
-  left: 15px;
+  left: 10px;
   background-image: url("../images/modal/minus.svg");
 }
 
@@ -785,7 +814,7 @@ body {
 }
 
 .plus {
-  right: 15px;
+  right: 10px;
   background-image: url("../images/modal/plus.svg");
 }
 
@@ -892,7 +921,8 @@ body {
   background: url("../images/catalog/mountains-blurry.jpg") no-repeat;
   background-size: cover;
   background-color: #82B3D3;
-  padding: 35px 0 70px;
+  padding: 35px 0 73px;
+  margin-bottom: 50px;
 }
 
 .main-inner-title {
@@ -960,6 +990,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 32px;
 }
@@ -1107,6 +1138,7 @@ body {
   position: relative;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 4px;
 }
 
 .range-bar {
@@ -1195,7 +1227,6 @@ body {
 }
 
 .hotel-sort {
-  padding-top: 50px;
   margin-bottom: 40px;
 }
 
@@ -1280,8 +1311,12 @@ body {
   padding-bottom: 60px;
 }
 
+
+/* Карточки товара */
+
+
 .hotel-list {
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -1435,12 +1470,15 @@ body {
   padding: 9px 22px 8px;
 }
 
+
+/* Пагинация */
+
+
 .pagination {
   list-style: none;
   margin: 0;
-  margin-top: 40px;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 39px;
   border-top: 1px solid #E6E6E6;
   display: flex;
 }
